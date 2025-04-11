@@ -60,3 +60,57 @@ Git can tracks the every changes from work directory to remote repository.
 - Git log –oneline # it give in one line log
   ![image](https://github.com/user-attachments/assets/4f984b48-5251-4e2a-a117-c5b0c7c5efac)
 - Git pull #solve the merger conflicts and different commit ids 
+# Team work with same repo and push and pull conflicts
+# Here I am taking to team mates 1. Windows and 2. Linux
+- git pull --no-rebase # it fetch the missing commit id and create a new merge commit id
+![image](https://github.com/user-attachments/assets/796e647c-fd2e-485e-9217-1a2ff2d22e00)
+- Git pull --rebase # it will fetch the missing the commit id and recent commit id will placed on the top
+![image](https://github.com/user-attachments/assets/a6203564-5952-4ecc-88ff-7897adb5d6f1)
+![image](https://github.com/user-attachments/assets/08c7875b-f28e-4867-8d9e-572d1f26cef7)
+# MERGER CONFLICTS ON SAME FILE OR DIFFERENT FILE
+- Git pull –ff #minor changes only use this based on commit id is diff means it will not work
+- I am add one file in remote repo and using git pull how it will let’s see
+![image](https://github.com/user-attachments/assets/2b31b55d-5f98-4323-ac69-e3efeaaea328)
+- then use the git pull for both os
+- then change in code for one line and add, commit changes, push
+- Then execute the same change in same line code in windows os and check the errors
+![image](https://github.com/user-attachments/assets/bbc81593-2fc6-4fb4-a286-0d35ead270da)
+- git log --oneline --all --graph # it shows the graphical representation
+![image](https://github.com/user-attachments/assets/ef07b592-7d8c-432c-9b79-90f87818bf51)
+# Git cherry pick # if we want merge specific commit into upstream branch (like main) cherry pick will help us 
+- git cherry-pic <committed>
+- git push origin<branch name>
+![image](https://github.com/user-attachments/assets/d8f68d92-4cd5-4709-a762-c349918b1c4e)
+![image](https://github.com/user-attachments/assets/42c0f10e-cf9b-429d-b27c-de92f0d12f2c)
+![image](https://github.com/user-attachments/assets/b76533d5-6faf-42eb-8ae3-149e2fbc5a55)
+# Git restore # This cmd can use for undo the changes in working dir only 
+- Git restore <filename>
+![image](https://github.com/user-attachments/assets/2f1c9cc0-6ebc-4e1c-bd9e-83763518954f)
+![image](https://github.com/user-attachments/assets/3ae9db4d-f489-4590-a4f1-cefec55f67e1)
+# git stash
+- Git stash push <filename>
+![image](https://github.com/user-attachments/assets/9626af33-6136-4123-86d0-268fd83b0c63)
+- Git stash list
+![image](https://github.com/user-attachments/assets/2fa5ba40-113b-47db-b1e1-cf76e23945e8)
+- git stash apply stash@{0} #  It act for a reback the file into the stagging area
+![image](https://github.com/user-attachments/assets/2fcfe146-5479-47ff-8c2b-eda5532671e0)
+- git stash pop stash@{0} # it act for a Dropped stash
+![image](https://github.com/user-attachments/assets/81152e1f-70c6-4828-9401-3df2cabd4b04)
+- git stash clear # clear the all stash files
+![image](https://github.com/user-attachments/assets/35527688-d171-4b7b-9c88-831f53263e51)
+- git revert <commit_id> # it can create a extra commit id and clear the data in the file. This is use for after the commit_id
+![image](https://github.com/user-attachments/assets/673152a6-79ff-43b8-af05-e71e3950827f)
+- Git reset # git reset changes your branch’s history or staging area, depending on the mode you use:
+![image](https://github.com/user-attachments/assets/78b6f328-fba0-4379-8d66-814c96bc72cb)
+![image](https://github.com/user-attachments/assets/ccdd42ab-5dff-424a-9620-b89a4099d81d)
+![image](https://github.com/user-attachments/assets/048bd8a9-df90-4958-8a14-f46a08d2e148)
+- Git diff # it show the changes between in the working and stagging area
+![image](https://github.com/user-attachments/assets/ec307b5f-647b-47f8-95be-9eed6c2804ef)
+- Git diff --staged
+![image](https://github.com/user-attachments/assets/12af24f5-0b3f-4773-bdbc-207933a5669d)
+- Git diff head #
+![image](https://github.com/user-attachments/assets/2a61ed2a-f2f6-4413-b3d4-8ea18f5a33ef)
+# Git pull = git fetch + git merge # pull remote repo
+- Git pull <remote url>
+- Git merge <branchname> merging the dev in main branch
+![image](https://github.com/user-attachments/assets/55f3e6c3-5f1f-4fa2-a812-3d208782bd14)
