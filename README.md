@@ -1,5 +1,5 @@
 # TASK-4-Version-Controlled-DevOps-Project-with-Git
-## Git:
+## Git
 - Git is a distributed version control system used to track changes in source code during software 
 development. It helps teams collaborate, manage code versions, and keep a history of every change made to a 
 project.
