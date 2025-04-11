@@ -35,6 +35,7 @@ Git can tracks the every changes from work directory to remote repository.
 - git clone  -- This cmd use for a clone the repo from remote to local
 - mkdir file-1
 - git status
+  
 ![Image](https://github.com/user-attachments/assets/14a86b98-4324-4995-b1fd-8ceb8555191a)
 
 
